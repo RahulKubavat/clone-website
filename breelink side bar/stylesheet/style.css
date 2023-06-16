@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*========== HEADER TOP START ==========*/
+
+header {
+  width: 100%;
+  background: linear-gradient(rgba(0, 10, 77, 0.65), rgba(0, 10, 77, 0.65)), url(../source/diverse-people-working-office.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: block;
+  border-radius: 0 0 20px 0;
+}
+
+.side-nav {
+  width: 250px;
+  height: 100%;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.87);
+  backdrop-filter: blur(5px);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: .5s;
+}
+
+/* .nav-links h{
+  background: url(../source/diverse-people-working-office.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-position: center;
+
+} */
+
+
+.logo {
+  display: block;
+  margin-bottom: 140px;
+}
+
+.logo-img {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.nav-links {
+  position: relative;
+}
+
+.nav-links li {
+  padding: 5px 0;
+}
+
+.nav-links li a {
+  color: #141d38;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li a i {
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.nav-time-link {
+  margin-top: 140px;
+}
+
+
+/* .active{
+   background: #fff;
+   width: 100%;
+   height: 47px;
+   position: absolute;
+   left: 0;
+   top: 2.6%;
+   z-index: -1;
+   border-radius: 6px;
+   box-shadow: 0 5px 10px rgba(9, 77, 110, 0.4);
+   display: none;
+   transition: top 0.9s;
+ } */
+
+.nav-links li:hover a {
+  color: #fff;
+  background: #141d38;
+  transition: .3s;
+  border-radius: 6px;
+}
+
+.logo-icon {
+  display: none;
+}
+
+/*========== HEADER TOP START PHONE SCREEN (600PX) ==========*/
+
+@media only screen and (max-width: 600px) {
+  .side-nav {
+    width: 110px;
+  }
+
+  .logo-icon {
+    display: block;
+    width: 45px;
+    margin-top: 95px;
+  }
+
+  .logo-img {
+    display: none;
+  }
+
+  .nav-links li a p {
+    display: none;
+  }
+
+  .nav-links li a i {
+    margin-right: 0;
+  }
+
+  .nav-links li a {
+    justify-content: center;
+  }
+}
+
+/*========== HEADER HEADING TOP START ==========*/
+
+.top-heading {
+  position: absolute;
+  top: 7%;
+  left: 33%;
+}
+
+.top-heading .main-heading {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 80px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.parent {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  top: 440px;
+  right: 130px;
+
+}
+
+.div1 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  /* border: 1px solid #141d38; */
+  border-top: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+  padding: 40px 60px;
+  border-radius: 20px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.main-icons {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.main-icons i {
+  font-size: 3rem;
+}
+
+.parent h5 {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.parent .div1:hover {
+  background: #43baff40;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transform: translateY(-10px);
+  border-color: #fff;
+  cursor: pointer;
+}
+
+/*========== ABOUT PAGE START ==========*/
+
+#about-us {
+  background-image: url(../source/breelink-about-bg.png);
+  /* background-position: 50% 165px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0 125px 0;
+  position: relative;
+}
+
+.about-align-center {
+  text-align: center;
+}
+
+.about-main-heading span {
+  font-size: 14px;
+  font-weight: 800;
+  color: #43baff;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.about-main-heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.about-main-img {
+  text-align: center;
+}
+
+.space50 {
+  width: 100%;
+  height: 50px;
+}
+
+.justify-content-center {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+  position: relative;
+  margin: 0 50px;
+}
+
+.services-box {
+  overflow: hidden;
+  position: relative;
+  padding: 33px 15px 28px;
+  background: #fff;
+  transition: all 0.3s linear;
+  border: 1px solid #e7e7e7;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.services-box .big-number {
+  position: absolute;
+  right: -7px;
+  bottom: 0;
+  font-size: 72px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  line-height: 52px;
+  color: #f2f2f2;
+}
+
+.services-box .icon-main {
+  float: left;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 15px;
+}
+
+.services-box .color-1 {
+  background-color: #fff;
+  color: #7141b1;
+}
+
+.services-box .color-2 {
+  background-color: #fff;
+  color: #00474e;
+}
+
+.services-box .color-3 {
+  background-color: #fff;
+  color: #43baff;
+}
+
+.services-box .color-4 {
+  background-color: #fff;
+  color: #051d3b;
+}
+
+.services-box .icon-main span i {
+  font-size: 40px;
+}
+
+.services-box:hover {
+  box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+/*========== TECHNOLOGY PAGE START ==========*/
+
+.technology {
+  background:
+    linear-gradient(rgba(0, 10, 77, 0.65), rgba(0, 10, 77, 0.65)),
+    url(../source/12643219_5039684.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0 100px 0;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.technology-index {
+  margin: 0 40px;
+}
+
+.tech-heading {
+  display: grid;
+  text-align: center;
+  line-height: 30px;
+}
+
+.tech-heading h4 {
+  color: #43baff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tech-main-heading {
+  font-size: 40px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.technology .ptch {
+  color: #f2f2f2;
+  font-size: 15px;
+  margin: 0 80px;
+}
+
+.space30 {
+  width: 100%;
+  height: 30px;
+}
+
+.tech-three-grid {
+  display: inline-block;
+  text-align: center;
+}
+
+.tech-grid1 {
+  padding: 20px 40px;
+  border: 1px solid #43baff;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.tech-grid1 :nth-child(2) {
+  padding: 5px 30px;
+}
+
+.tech-bignumber span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.tech-bignumber h4 {
+  color: #fff;
+  font-size: 16px;
+}
+
+.tech-container {
+  position: relative;
+  left: 116px;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.tech-container .card {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+}
+
+.tech-container .card:nth-child(1) {
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 58, 80, 0.73)),
+    url(../source/man-using-tablet-work-connect-with-others.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tech-container .card:nth-child(2) {
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 58, 80, 0.73)), url(../source/tech2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tech-container .card:nth-child(3) {
+  background:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 58, 80, 0.73)),
+    url(../source/html-css-collage-concept-with-person\(1\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tech-container .card .content {
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  transform: translateY(150px);
+  opacity: 0;
+}
+
+.tech-container .card:hover .content {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.tech-container .card .content-tech h3 {
+  /* position: absolute; */
+  top: -15px;
+  right: 120px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+.tech-container .card .content-tech h2 {
+  font-size: 1.8em;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+/* CLIENT INFO (ACTIVE CLIENTS, PROJECTS, TEAM ADVISORS) */
+
+.clients-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin: 0 133px;
+  gap: 2rem;
+}
+
+
+.clients-info .client-page span {
+  font-size: 25px;
+  font-weight: 700;
+  color: #43baff;
+}
+
+.clients-info .client-page h3 {
+  color: #fff;
+}
+
+/*========== COMPOANIES CONTAINER ==========*/
+
+.compoanies {
+  position: relative;
+  top: 0rem;
+  padding: 0;
+  margin: 0;
+}
+
+.companies-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.companies-container span {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.companies-container span img {
+  width: 120px;
+  filter: contrast(0%);
+  opacity: .7;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.companies-container span img:hover {
+  filter: contrast(100%);
+}
+
+/*========== SERVICES ==========*/
+
+.services {
+  padding: 120px 0 120px 0;
+  background-color: #F8F8F8;
+  display: flex;
+  align-items: center;
+}
+
+.services .service-heading {
+  width: 500px;
+  margin-left: 80px;
+  text-align: center;
+}
+
+.services span {
+  font-size: 14px;
+  font-weight: 800;
+  color: #43baff;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.services h2 {
+  font-size: 36px;
+}
+
+.justify-content-center0 {
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  justify-content: center;
+}
+
+.col-lg-3 {
+  transition: 0.5s;
+}
+
+.serve-box1 {
+  overflow: hidden;
+  position: relative;
+  padding: 40px 40px 35px;
+  background: #fff;
+  transition: all 0.3s linear;
+  border: 1px solid #e7e7e7;
+  border-radius: 20px;
+}
+
+.serve-box1 .icon-main {
+  position: absolute;
+  top: 8px;
+  right: 40px;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  background-color: #00deff;
+  background-image: linear-gradient(125deg, #00deff, #502a71);
+  border-radius: 30% 70% 77% 23% / 30% 30% 70% 70%;
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+}
+
+.serve-box1 .icon-main i,
+.serve-box1 .icon-main span {
+  position: absolute;
+  bottom: 13px;
+  left: 14px;
+  font-size: 35px;
+  line-height: 1;
+  color: #141d38;
+}
+
+.serve-box1 .content-box h5 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 60px;
+}
+
+.serve-box1:hover {
+  color: #43baff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transform: translateY(-10px);
+  border-color: #fff;
+  cursor: pointer;
+}
+
+/* .team-contact {
+  padding: 0 0 120px 0;
+  background-color: #F8F8F8;
+  overflow: hidden;
+} */
+
+.team-contact {
+  /* padding: 55px 65px 200px 65px; */
+  height: 300px;
+  background-image:
+
+    linear-gradient(rgba(0, 10, 77, 0.65), rgba(0, 10, 77, 0.65)),
+
+    url(../source/main-bg000111.jpg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.team-info-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  top: 100px;
+  right: 50px;
+}
+
+.team-info-heading span {
+  color: #fff;
+  font-size: 20px;
+}
+
+.team-info-heading h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600
+}
+
+.team-contact .team-btn {
+  display: inline-block;
+  position: relative;
+  top: 60px;
+  left: 50px;
+}
+
+.team-btn a {
+  padding: 20px 30px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.team-btn a:hover{
+  background: #43baff;
+}
